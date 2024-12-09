@@ -1,4 +1,6 @@
 {
   "item.pilgrim.crystal": "Crystal",
-  "item.pilgrim.amber": "Amber"
+  "item.pilgrim.amber": "Amber",
+
+  "block.pilgrim.pill_bricks": "Pill Bricks"
 }

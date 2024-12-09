@@ -10,7 +10,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item Crystal = registerItem("crystal", new Item(new Item.Settings()));
-    public static final Item Amber = registerItem("amber", new Item(new Item.Settings()));
+    public static Item AMBER = registerItem("amber", new AmberItem(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Pilgrim.MOD_ID, name), item);
@@ -21,7 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(Crystal);
-            entries.add(Amber);
+            entries.add(AMBER);
         });
     }
 }

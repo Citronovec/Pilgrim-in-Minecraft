@@ -1,5 +1,6 @@
 package net.citron.pilgrim;
 
+import net.citron.pilgrim.block.ModBlocks;
 import net.citron.pilgrim.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +15,6 @@ public class Pilgrim implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
